@@ -14,7 +14,12 @@ function Shop() {
     return (
         <div className='shop-container'>
             <div className="product-container">
-                {products.map(product => <Product></Product>)}
+                {
+                    products.map(product => <Product
+                        key={product.id}
+                        product={product}
+                    ></Product>)
+                }
             </div>
             <div className="cart-container"><h1>this is cart</h1></div>
         </div>
