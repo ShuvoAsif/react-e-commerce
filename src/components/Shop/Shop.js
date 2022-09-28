@@ -25,6 +25,7 @@ function Shop() {
                 savedCart.push(addedProduct);
 
             }
+            setCart(savedCart);
             console.log(addedProduct);
         }
     }, [products])
